@@ -1,0 +1,170 @@
+<!doctype html>
+{% load static %}
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title> Education</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/img/favicon.png' %}">
+
+    <!-- CSS
+	============================================ -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{%static 'assets/css/bootstrap.min.css'%}">
+
+    <!-- Icon Font CSS -->
+    <link rel="stylesheet" href="{% static 'assets/css/icons.min.css'%}">
+
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="{% static 'assets/css/plugins.css' %}">
+
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+
+    <!-- Modernizer JS -->
+    <script src="{% static 'assets/js/vendor/modernizr-2.8.3.min.js' %}"></script>
+</head>
+
+<body>
+<header class="header-area">
+    <div class="header-top bg-img" style="background-image:url(assets/img/icon-img/header-shape.png);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-7 col-12 col-sm-8">
+
+                </div>
+                <div class="col-lg-6 col-md-5 col-12 col-sm-4">
+                    <div class="login-register">
+                        <ul>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-bottom sticky-bar clearfix">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-4">
+                    <div class="logo">
+                        <a href="index.html">
+                            <h1>PASSENCRYPTION</h1>
+                            <!-- <img alt="" src="assets/img/logo/logo.png"> -->
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-6 col-8">
+                    <div class="menu-cart-wrap">
+                        <div class="main-menu">
+                            <nav>
+
+
+
+
+
+
+
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</header>
+<div class="breadcrumb-area">
+    <div class="breadcrumb-top default-overlay bg-img breadcrumb-overly-4 pt-100 pb-95" style="background-image:url('{% static 'assets/img/bg/breadcrumb-bg-4.jpg' %}');">
+        <div class="container">
+            <h2>REGISTER</h2>
+
+        </div>
+    </div>
+    <div class="breadcrumb-bottom">
+        <div class="container">
+
+        </div>
+    </div>
+</div>
+<div class="login-register-area pt-130 pb-130">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 col-md-12 ml-auto mr-auto">
+                <div class="login-register-wrapper">
+                    <div class="login-register-tab-list nav">
+
+                        <a data-toggle="tab" href="#lg2">
+                            <h4> register </h4>
+                        </a>
+                    </div>
+                    <div class="tab-content">
+                        <div  class="tab-pane active">
+                            <div class="login-form-container">
+                                <div class="login-register-form">
+                                    <form method="post">
+                                        {% csrf_token %}
+                                        <input type="text" name="otp" placeholder="OTP">
+                                         <span> {{ form.errors.otp}} </span>
+
+                                        <div class="button-box">
+                                            <button class="default-btn" type="submit"><span>Submit</span></button>
+                                            <span> {{ form.errors }} </span>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer-area">
+    <div class="footer-top bg-img default-overlay pt-130 pb-80" style="background-image:url(assets/img/bg/bg-4.jpg);">
+        <div class="container">
+            <div class="row">
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- JS
+============================================ -->
+
+<!-- jQuery JS -->
+<script src="{% static 'assets/js/vendor/jquery-1.12.4.min.js'%}"></script>
+<!-- Popper JS -->
+<script src="{% static 'assets/js/popper.min.js' %}"></script>
+<!-- Bootstrap JS -->
+<script src="{%static 'assets/js/bootstrap.min.js' %}"></script>
+<!-- Plugins JS -->
+<script src="{% static 'assets/js/plugins.js' %}"></script>
+<!-- Ajax Mail -->
+<script src="{% static 'assets/js/ajax-mail.js' %}"></script>
+<!-- Main JS -->
+<script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>
